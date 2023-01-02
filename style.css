@@ -1,0 +1,1056 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.totop{
+    display: none;
+}
+/* -------------------------------- */
+.meum{
+    position: fixed;
+    top: 7vw;
+    left: 4vw;
+    width: 8vw;
+    height: 8vw;
+    padding-top: 1.5vw;
+    /* background: yellow; */
+    z-index: 10;
+}
+.meum.active span{
+    width: 12vw;
+}
+.meum.active .sp1{
+    transform: rotate(30deg);
+}
+.meum.active .sp2{
+    transform: rotate(-30deg);
+    margin-top: -1.3vw;
+}
+.meum span{
+    display: block;
+    height: 2px;
+    width: 5.5vw;
+    background: black;
+    margin: 1.3vw 0;
+    transition: 0.3s;
+}
+/* .meum:hover span{
+    width: 12vw;
+}
+.meum:hover .sp1{
+    transform: rotate(30deg);
+}
+.meum:hover .sp2{
+    transform: rotate(-30deg);
+    margin-top: -1.3vw;
+} */
+.meumpage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    /* top: 0; */
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgb(208, 208, 208);
+    transition: 0.3s;
+    z-index: 9;
+}
+.meumpage.active{
+    top: 0;
+}
+.meumpage .logo{
+    width: 38vw;
+    padding: 8vw 0;
+    /* background: yellow; */
+}
+.meumpage ul{
+    list-style: none;
+    padding-top: 9.1vw;
+    /* background: red; */
+}
+.meumpage ul li{
+    margin-bottom: 4.4vw;
+}
+.meumpage ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 5vw;
+    font-weight: bold;
+}
+.meumpage .place{
+    padding-left: 12vw;
+    /* margin-left: 24vw; */
+    /* width: 270px; */
+    width: 55vw;
+    height: 46.8vw;
+    /* height: 234px; */
+    /* background: yellow; */
+}
+.meumpage .place h3{
+    font-size: 2.7vw;
+    line-height: 1.8;
+}
+.meumpage .place a{
+    display: block;
+    float: right;
+    margin-top: 30px;
+    width: 5vw;
+    height: 5vw;
+}
+/* --------------------------------- */
+header{
+    position: relative;
+    width: 100%;
+    height: 115vw;
+    background-color: rgb(234, 234, 234);
+}
+header .top-box{
+    position: absolute;
+    right: 0;
+    width: 78vw;
+    height: 100%;
+    overflow: hidden;
+    background: url('./images/image-1.jpg')no-repeat;
+    background-size: cover;
+}
+.top-box .box-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgba(90, 154, 237, 0.107);
+    /* background: yellow; */
+}
+header .top-contact{
+    position: absolute;
+    top: 0;
+    width: 60vw;
+    height: 100%;
+    /* font-size: 1.5vw; */
+    text-align: left;
+    padding: 50vw 10px 0 40px;
+    z-index: 2;
+}
+header .top-contact .logo{
+    width: 36.5vw;
+    height: 4.5vw;
+    margin-bottom: 5vw;
+    /* background: yellow; */
+}
+.top-contact h3{
+    font-size: 2.2vw;
+    font-weight: bold;
+    margin-bottom: 1.3vw;
+}
+.top-contact ul li{
+    display: inline-block;
+    line-height: 2.1;
+    padding-right: 1.8vw;
+}
+.top-contact ul li p{
+    letter-spacing: 1px;
+    font-size: 2.7vw;
+    font-weight: bold;
+}
+.planning{
+    position: relative;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+}
+.planning .new{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 234, 234);
+    padding: 12vw 10vw 0 12vw;
+    margin-bottom: 100vw;  
+    /* margin-bottom: 5.8vw; */
+}
+.planning .time{
+    margin-bottom: 15px;
+    font-size: 3.5vw;
+}
+.new .newcontact{
+    margin-bottom: 35px;
+    font-size: 3.5vw;
+}
+.new .more{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    font-weight: bold;
+    font-size: 3.7vw;
+    margin-bottom: 25px;
+    transition: 0.5s;
+    /* background: yellow; */
+}
+.new .more p{
+    /* display:inline-block;*/
+    width: 10vw; 
+    margin-left: 2vw;
+    transition: 0.5s;
+    /* background: red; */
+}
+/* .planning .new{
+    background-color: rgb(234, 234, 234);
+    padding: 12vw 12vw 0;
+    margin-bottom: 100vw;  
+}
+.new .time{
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 3.5vw;
+}
+.new .newcontact{
+    text-align: left;
+    margin-bottom: 35px;
+    font-size: 3.5vw;
+}
+.new .more{
+    
+    text-align: right;
+    font-weight: bold;
+    font-size: 3.5vw;
+    margin-bottom: 25px;
+    transition: 0.5s;
+} */
+.new .more:hover p{
+    color: rgb(89, 89, 89);
+} 
+.new .more .line-1{
+    /* display: inline-block; */
+    position: relative;
+    text-align: left;
+    width: 20vw;
+    height: 1.5px;
+    overflow: hidden;
+    /* margin-bottom: 1vw; */
+    /* background: yellow; */
+}
+.new .more .line-1 div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55vw;
+    height: 100%;
+    background: linear-gradient(90deg ,black 25vw, transparent 25vw,transparent 29vw, black 29vw);
+    /* animation-name: btn; */
+    /* transition: 0.5s; */
+}
+.new .more:hover .line-1 div{
+    /* right: -40vw; */
+    animation-name: btn2;
+    animation-duration: 1s;
+    opacity: 0.6;
+}
+/* .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.planning .image-1{
+    width: 63vw;
+    height: 88.5vw;
+    align-self: flex-start;
+    background: url('./images/p2.png')no-repeat;
+    background-size: contain;
+}
+.planning .plan-text{
+    padding-top: 8.5vw;
+    padding-right: 23px;
+    height: 37vw;
+    font-weight: bold;
+    font-size: 4.3vw;
+    transform-origin: top right;
+    transform: rotate(90deg);
+    float: right;
+}
+.planning .pic{
+    width: 25vw; 
+    height: 25vw;
+    background: url('./images/t1.svg');
+    position: absolute;
+    top: 126vw;
+    left:51%;
+    z-index: 0;
+} */
+/* .planning .plan-title{
+    float: right;
+    padding-top: 9.5vw;
+    width: 270px;
+} */
+
+.planning .image-1{
+    position: absolute;
+    top: 180px;
+    width: 60vw;
+    height: 85vw;
+    margin-bottom: 80px;
+    background: url('./images/p2.png')no-repeat;
+    background-size: contain;
+    z-index: 2;
+}
+.planning .plan-text{
+    position: absolute;
+    top: calc(180px + 82.2vw);
+    right: 12vw;
+    font-weight: bold;
+    font-size: 4.1vw;
+    transform-origin: top right;
+    transform: rotate(90deg);
+}
+.planning .pic{
+    width: 25vw; 
+    height: 25vw;
+    background: url('./images/t1.svg');
+    position: absolute;
+    top: calc(180px + 78vw);
+    left:48%;
+}
+.wwa{
+    clear: both;
+    /* background-color: rgb(234, 234, 234); */
+    padding: 21vw 10vw 6.5vw;
+}
+.wwa p{
+    line-height: 7.5vw;
+    font-size: 3.55vw;
+    letter-spacing: 1.7px;
+    margin-bottom: 24px;
+}
+.wwa a{
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+.wwa a .title{
+    display: inline-block;
+}
+.wwa a .title h1{
+    font-size: 9.3vw;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+}
+.wwa a .btn{
+    position: absolute;
+    top: -1vw;
+    left: 68vw;
+    width: 11vw;
+    height: 11vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.wwa a .btn div{
+    background: url('./images/images.png')no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 45% 14%;
+    background-position: center center;
+}
+.wwa a:hover h1{
+    color: white;
+}
+.wwa a:hover .btn{
+    left: 69vw;
+}
+.planning .pi-2{
+    width: 31%;
+    height: calc(110.5vw - 112px);
+    padding: 53vw 0 0 0;
+    background-size: contain;
+}
+.planning .pi-2 div{
+    width: 19vw;
+    height: 19vw;
+    background-size: contain;
+    background: url('./images/t2.svg')no-repeat;
+}
+.planning .image-2{
+    position: absolute;
+    right: 0;
+    transform: translate(0 ,-75px);
+    width: 69%;
+    height: 110vw;
+    background: url('./images/p1.png')no-repeat;
+    background-size: contain;
+}
+.clearfix::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.work{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: rgb(234, 234, 234);
+    /* background: red; */
+}
+.work .work-text{
+    width: 100%;
+    /* height: 100%; */
+    /* background: orange; */
+}
+.work-image{
+    width: 100%;
+    height: 73vw;
+    background: url('./images/p1-1.png');
+    background-size: 100% 100%;
+    /* background: rebeccapurple; */
+}
+.work .wwa a .btn{
+    position: absolute;
+    top: -1vw;
+    left: 34vw;
+    width: 11vw;
+    height: 11vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.work .wwa a:hover .btn{
+    /* border: 1px solid white; */
+    left: 35vw;
+}
+.work .pi-3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* float: left; */
+    width: 13.5vw;
+    height: 90vw;
+    /* width: 31%; */
+    /* height: calc(110.5vw - 112px); */
+    /* padding: 53vw 0 0 0; */
+    /* background: rgb(36, 201, 247);  */
+    background-size: contain;
+}
+.work .pi-3 div{
+    /* width: 22vw; */
+    /* height: 22vw; */
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    /* background: rebeccapurple; */
+    background: url('./images/t3.svg')no-repeat;
+}
+.list{
+    position: relative;
+    background-color: rgb(234, 234, 234);
+    padding: 23vw 0 33vw 1vw;
+    /* background: yellow; */
+}
+.list ul{
+    list-style: none;
+    /* background: red; */
+}
+.list ul li{
+    margin-bottom: 6.1vw;
+    /* background: yellow; */
+}
+.list ul li a{
+    display: inline-block;
+    color: rgb(213, 213, 213);
+    font-size: 10vw;
+    /* line-height: 3; */
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(213, 213, 213);
+    padding-bottom: 1vw;
+    /* background: red; */
+}
+.list .pi-4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* float: left; */
+    width: 29vw;
+    height: 29vw;
+    background-size: contain;
+}
+.list .pi-4 div{
+    /* width: 22vw; */
+    /* height: 22vw; */
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    /* background: rebeccapurple; */
+    background: url('./images/t4.svg')no-repeat;
+}
+.hover_img{
+    display: none;
+}
+.about{
+    width: 100%;
+    /* height: 500px; */
+    background: rgb(247, 247, 247);
+    padding: 21.8vw 11vw 6vw;
+    /* background: red; */
+}
+.about .title{
+    margin-bottom: 10vw;
+}
+.about .title h1{
+    font-size: 9.8vw;
+    font-weight: bold;
+    margin-bottom: 8vw;
+}
+.about .title p{
+    letter-spacing: 2.7px;
+    font-size: 3.3vw;
+    line-height: 7.9vw;
+    /* margin-bottom: 25px; */
+}
+/* .about p{
+    letter-spacing: 2.7px;
+    font-size: 3vw;
+    line-height: 8vw;
+    margin-bottom: 25px;
+} */
+.about .more{
+    /* display: inline-block; */
+    /* width: 100%; */
+    text-align: right;
+    font-weight: bold;
+    font-size: 3.5vw;
+    /* margin-left: 2vw; */
+    margin-bottom: 14.5vw;
+    /* background: red; */
+    transition: 0.5s;
+}
+.about .more p{
+    display: inline-block;
+    width: 13vw;
+    transition: 0.5s;
+    /* background: yellow; */
+}
+.about .more:hover p{
+    color: rgb(89, 89, 89);
+} 
+.about .more .line-1{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    width: 20vw;
+    height: 1.5px;
+    /* height: 10px; */
+    /* background: black; */
+    margin-bottom: 1vw;
+    overflow: hidden;
+    /* transition: 2s; */
+}
+.about .more .line-1 div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55vw;
+    height: 100%;
+    /* background: yellow; */
+    background: linear-gradient(90deg ,black 25vw, transparent 25vw,transparent 29vw, black 29vw);
+    /* background: linear-gradient(yellow, red); */
+    /* transition: 0.5s; */
+}
+.about .more:hover .line-1 div{
+    /* right: -40vw; */
+    opacity: 0.6;
+    animation-name: btn2;
+    animation-duration: 1s;
+}
+.data{
+    position: relative;
+    width: 100%;
+    height: 192.4vw;
+    padding: 18vw 11vw 6vw;
+    background: rgb(192, 192, 192);
+}
+.data .place{
+    font-size: 5.2vw;
+    line-height: 1.38;
+    margin-bottom: 10vw;
+}
+.data .image-3{
+    position: absolute;
+    top: 66vw;
+    right: 0;
+    width: 88%;
+    height: 77.1vw;
+    /* background: yellow; */
+    background: url('./images/p3.jpg')no-repeat;
+    background-size: contain;
+}
+/* .data .image-3 img{
+    width: 100%;
+    height: 100%;
+} */
+.data .footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+    /* height: 40vw; */
+    height: 41vw;
+    padding-top: 8.7vw;
+    padding-right: 10vw;
+    text-align: right;
+    /* background: yellow; */
+}
+.data .footer img{
+    width: 5.5vw;
+    height: 5.5vw;
+    margin-bottom: 11vw;
+}
+.data .footer p{
+    font-size: 2.4vw;
+}
+@keyframes btn2{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: -33vw;
+    }
+}
+
+@media (min-width:768px) {
+    .totop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 3.28vw;
+        bottom: 1.5vw;
+        transform-origin: top right;
+        transform: rotate(90deg);
+        z-index: 8;
+    }
+    .totop .line-1{
+        position: relative;
+        width: 6.8vw;
+        height: 1.5px;
+        overflow: hidden;
+    }
+    .totop .line-1 div{
+        position: absolute;
+        top: 0;
+        right: -200px;
+        width: 300px;
+        height: 100%;
+        background: linear-gradient(90deg ,black 150px, transparent 150px,transparent 170px, black 170px);
+        transition: 0.5s;
+    }
+    .totop p{
+        font-size: 1vw;
+        padding-left: 10px;
+    }
+    .totop:hover p{
+        color: rgb(89, 89, 89);
+    }
+    .totop:hover .line-1 div{
+        /* right: 0; */
+        animation-name: btn1;
+        animation-duration: 1s;
+        opacity: 0.6;
+    }
+    @keyframes btn1{
+        0%{
+            /* right: ; */
+            right: -200px;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    /* ------------------------------- */
+    .meum{
+        top: 23.8vw;
+        left: 2.2vw;
+    } 
+    .meum span{
+        width: 2vw;
+        margin: 0.9vw 0;
+    }
+    .meum.active span{
+        width: 2.5vw;
+    }
+    .meum.active .sp2{
+        margin-top: -1vw;
+    }
+    .meumpage{
+        flex-direction: row;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+    }
+    .meumpage .logo{
+        width: 17.5vw;
+        margin-left: 7.8vw;
+        padding: 25.2vw 0;
+        /* background: red; */
+    }
+    .meumpage ul{
+        padding-left: 11.5vw;
+        padding-top: 19.4vw;
+        /* background: yellow; */
+    }
+    .meumpage ul li{
+        margin-bottom: 2.3vw;
+    }
+    .meumpage ul li a{
+        font-size: 2vw;
+    }
+    .meumpage .place{
+        align-self: flex-end;
+        /* background: rebeccapurple; */
+        /* padding-right: 5.8vw; */
+        padding-left: 4vw;
+        padding-right: 5.6vw;
+        height: 34.8vw;
+        width: 37.5vw;
+    }
+    .meumpage .place h3{
+        font-size: 2vw;
+        line-height: 1.55;
+    }
+    .meumpage .place a{
+        margin-top: 8vw;
+        /* margin-left: 2vw; */
+        width: 1.5vw;
+        height: 1.5vw;
+        /* background: red; */
+    }
+    .meumpage .place a img{
+        width: 100%;
+        height: 100%;
+    }
+    /* ----------------------------- */
+    header{
+        height: 52.5vw;
+    }
+    header .top-box{
+        width: 86vw;
+    }
+    header .top-contact{
+        padding: 25vw 12vw 0 7vw;
+    }
+    header .top-contact .logo{
+        width: 18vw;
+        margin-bottom: 3.5vw;
+    }
+    .top-contact h3{
+        font-size: 1vw;
+        margin-bottom: 0.4vw;
+    }
+    .top-contact ul{
+        width: 26.5vw;
+    }
+    .top-contact ul li{
+        line-height: 1.9;
+        padding-right: 1.2vw;
+    }
+    .top-contact ul li p{
+        font-size: 1.1vw;
+    }
+    .planning .new{
+        flex-direction: row;
+        padding: 5.1vw 12.5vw 0;
+        margin-bottom: 0px;  
+    }
+    .new .time{
+        width: 9vw;
+        font-size: 1.1vw;
+    }
+    .new .newcontact{
+        /* margin-bottom: 35px; */
+        font-size: 1.1vw;
+        width: 70%;
+    }
+    .new .more{
+        flex-direction: row;
+        font-size: 1.2vw;
+        width: 30%;
+        /* background: green; */
+    }
+    .new .more p{
+        margin-left: 1vw;
+        font-size: 1vw;
+        width: 41px;
+    }
+    .new .more .line-1{
+        width: 11vw;
+    }
+    .new .more .line-1 div{
+        width: 30vw;
+        background: linear-gradient(90deg ,black 14vw, transparent 14vw,transparent 16vw, black 16vw);
+    }
+    .new .more:hover .line-1 div{
+        animation-name: btn;
+        animation-duration: 1s;
+    }
+    .planning .new{
+        height: 10vw;
+    }
+    .planning .image-1{
+        top: 43vw;
+        width: 36vw;
+        height: 51vw;
+    }
+    .planning .plan-text{
+        top: 17.5vw;
+        right: 12.3vw;
+        font-size: 2.2vw;
+        line-height: 0.78;
+        transform: rotate(0deg);
+    }
+    .planning .pic{
+        width: 14vw; 
+        height: 14vw;
+        top: 75vw;
+        left: 57%;
+    }
+    .planning .wwa{
+        position: absolute;
+        top: 10vw;
+        clear: both;
+        width: 60%;
+        height: 33vw;
+        padding: 7.2vw 3.78vw 6.5vw 12.5vw;
+    }
+    .planning .wwa p{
+        width: 400px;
+    }
+    .wwa p{
+        line-height: 1.95;
+        font-size: 1vw;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+    }
+    .wwa a .title h1{
+        margin-bottom: 2.5vw;
+        font-size: 4vw;
+    }
+    .wwa a .btn{
+        top: -0.4vw;
+        left: 26vw;
+        width: 5.5vw;
+        height: 5.5vw;
+    }
+    .wwa a:hover h1{
+        color: white;
+    }
+    .wwa a:hover .btn{
+        left: 27vw;
+    }
+    .planning .pi-2{
+        width: 100%;
+        height: 92.8vw;
+        padding: 84vw 0 0 0;
+        background-size: contain;
+    }
+    .planning .pi-2 div{
+        width: 8.8vw;
+        height: 8.8vw;
+    }
+    .planning .image-2{
+        top: 26vw;
+        right: 0;
+        transform: translate(0 ,0);
+        width: 36%;
+        height: 55vw;
+        background: url('./images/p1.png')no-repeat;
+        background-size: contain;
+    }
+    .work{
+        flex-direction: row;
+        padding-top: 5vw;
+    }
+    .work .wwa a .btn{
+        top: -0.4vw;
+        left: 14vw;
+        width: 5vw;
+        height: 5vw;
+    }
+    .work .wwa a:hover .btn{
+        left: 15vw;
+    }
+    .work .work-text{
+        width: 50%;
+    }
+    .work .work-text .wwa{
+        padding: 0 6.5vw 0 12.5vw;
+    }
+    .work .work-text .wwa p{
+        font-size: 0.8vw;
+        letter-spacing: 0.5px;
+        line-height: 2;
+    }
+    .work-image{
+        width: 57%;
+        height: 40.3vw;
+    }
+    .work .pi-3{
+        position: absolute;
+        top: 3.7vw;
+        right: 0;
+        width: 7.2vw;
+        height: 12vw;
+    }
+    .list{
+        padding: 9.5vw 0 14.8vw;
+    }
+    .list ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .list ul li{
+        /* position: absolute; */
+        flex-basis: 0;
+        margin-bottom: 2.5vw;
+    }
+    .list ul li a{
+        font-size: 5.4vw;
+        padding-bottom: 0.3vw;
+        font-weight: normal;
+        border-bottom: none;
+        transition: 0.3s;
+    }
+    .list ul li .lie{
+        position: relative;
+        width: 100%;
+        height: 3.8px;
+        overflow: hidden;
+        /* background: yellow; */
+    }
+    .list ul li .lie div{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 230%;
+        background: linear-gradient(90deg,rgb(213, 213, 213) 45%,transparent 45%,transparent 55%,rgb(213, 213, 213) 55%);
+        /* background: red; */
+        transition: 0.3s;
+    }
+    .list ul li:hover .lie div{
+        /* right: -130%; */
+        animation-name: list-btn;
+        animation-duration: .5s;
+    }
+    .list ul li:hover a{
+        color: rgb(255, 255, 255);
+    }
+    /* .hover_img{
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: yellow;
+    } */
+    @keyframes list-btn {
+        from{
+            right: 0;
+        }
+        to{
+            right: -130%;
+        }
+    }
+    .list .pi-4{
+        width: 15.5vw;
+        height: 15.5vw;
+    }
+    .about{
+        height: 30vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 11.1vw 11vw 3vw;
+    }
+    .about .title h1{
+        font-size: 4vw;
+        margin-bottom: 2.5vw;
+    }
+    .about .title p{
+        letter-spacing: 1px;
+        font-size: 1vw;
+        padding-right: 36%;
+        line-height: 2;
+    }
+    .about .more{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 3.7vw;
+        margin-top: 2vw;
+        transition: 0.5s;
+    }
+    .about .more p{
+        font-size: 1vw;
+        width: 4vw;
+    }
+    .about .more .line-1{
+        margin: auto 0;
+        width: 13vw;
+    }
+    .data{
+        padding: 7.3vw 12.5vw 0;
+        height: 75.2vw;
+    }
+    .data .place{
+        font-size: 1.86vw;
+    }
+    .data .footer{
+        top: 0.8vw;
+        padding-right: 13vw;
+    }
+    .data .footer p{
+        font-size: 1vw;
+    }
+    .data .footer img{
+        width: 1.7vw;
+        height: 1.7vw;
+        margin-bottom: 7vw;
+    }
+    .data .image-3{
+        top: 27.7vw;
+        width: 87.3%;
+        height: 47.5vw;
+        background-position: center center;
+        background-size: 100%;
+    }
+    @keyframes btn{
+        0%{
+            right: 0;
+        }
+        100%{
+            right: -16vw;
+        }
+    }
+}
+@media (min-width:1050px){
+    header .top-contact{
+        width: 45%;
+    }
+    .planning .wwa{
+        width: 50%;
+    }
+    .top-contact ul{
+        width: 26vw;
+    }
+    .planning .wwa p{
+        width: 100%; 
+    }
+    
+}
